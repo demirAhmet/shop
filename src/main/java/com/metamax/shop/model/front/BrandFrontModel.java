@@ -1,4 +1,4 @@
-package com.metamax.shop.model;
+package com.metamax.shop.model.front;
 
 public class BrandFrontModel {
     private long id;
