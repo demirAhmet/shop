@@ -1,7 +1,5 @@
 package com.metamax.shop.model.front;
 
-import com.metamax.shop.entity.Product;
-
 public class OrderFrontModel {
     private double totalProductValue;
     private double totalShippingValue;
