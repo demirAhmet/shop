@@ -1,0 +1,1 @@
+<div>Siparişiniz alındı.</div>

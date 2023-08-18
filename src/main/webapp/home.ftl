@@ -1,1 +1,1 @@
-home page
+<div><a href="/urunler">Alışverişe başla</a></div>
