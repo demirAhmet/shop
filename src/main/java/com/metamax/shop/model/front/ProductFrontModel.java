@@ -1,21 +1,10 @@
-package com.metamax.shop.model;
+package com.metamax.shop.model.front;
 
 public class ProductFrontModel {
     private long id;
     private String name;
     private BrandFrontModel brand;
     private double price;
-
-
-    public ProductFrontModel() {
-    }
-
-    public ProductFrontModel(long id, String name, BrandFrontModel brand, double price) {
-        this.id = id;
-        this.name = name;
-        this.brand = brand;
-        this.price = price;
-    }
 
     public long getId() {
         return id;

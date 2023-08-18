@@ -8,7 +8,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-@OneToOne
+    @ManyToOne
     @JoinColumn(name = "brand_id")
     private Brand brand;
     @Column(name = "name")

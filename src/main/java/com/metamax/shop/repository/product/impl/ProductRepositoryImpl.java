@@ -9,13 +9,25 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository("product.repository")
-public class ProductRepositoryImpl  implements ProductRepository {
+public class ProductRepositoryImpl implements ProductRepository {
 
     @PersistenceContext
     EntityManager entityManager;
+
     @Override
     public List<Product> getProducts() {
         return entityManager.createQuery("select p from Product p")
                 .getResultList();
+    }
+
+    @Override
+    public Product getProductById(long id) {
+        if (id <= 0) {
+            return null;
+        }
+        List<Product> productList = entityManager.createQuery("select p from Product p where p.id=:id")
+                .setParameter("id", id)
+                .getResultList();
+        return productList != null && productList.size() > 0 ? productList.get(0) : null;
     }
 }
