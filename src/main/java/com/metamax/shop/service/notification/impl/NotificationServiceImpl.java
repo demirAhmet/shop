@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 public class NotificationServiceImpl implements NotificationService {
     @Override
     public void sendMail(long orderId, String emailAddress) {
-        //email sent to admin
-        return;
+        //email gönderimi yapıldı
     }
 }

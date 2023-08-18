@@ -27,7 +27,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductFrontModel> getProducts() {
-        List<Product> productEntities = null;
+        List<Product> productEntities;
         try {
             productEntities = productRepository.getProducts();
         } catch (MetamaxBusinessException | MetamaxTechnicalException e) {
@@ -40,9 +40,7 @@ public class ProductServiceImpl implements ProductService {
         }
 
         List<ProductFrontModel> productList = new ArrayList<>();
-        productEntities.forEach(a -> {
-            productList.add(fromEntity(a));
-        });
+        productEntities.forEach(a -> productList.add(fromEntity(a)));
         return productList;
     }
 

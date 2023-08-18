@@ -3,15 +3,6 @@ package com.metamax.shop.model.front;
 public class BrandFrontModel {
     private long id;
     private String name;
-
-    public BrandFrontModel() {
-    }
-
-    public BrandFrontModel(long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
     public long getId() {
         return id;
     }

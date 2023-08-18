@@ -1,13 +1,11 @@
 package com.metamax.shop.service.checkout.impl;
 
-import com.metamax.shop.exception.MetamaxBaseException;
 import com.metamax.shop.exception.MetamaxBusinessException;
 import com.metamax.shop.exception.MetamaxTechnicalException;
 import com.metamax.shop.model.front.CheckOutForm;
 import com.metamax.shop.model.front.OrderFrontModel;
 import com.metamax.shop.model.payment.CardInfo;
 import com.metamax.shop.model.payment.PaymentInfo;
-import com.metamax.shop.repository.order.OrderRepository;
 import com.metamax.shop.service.checkout.CheckOutService;
 import com.metamax.shop.service.notification.NotificationService;
 import com.metamax.shop.service.order.OrderService;

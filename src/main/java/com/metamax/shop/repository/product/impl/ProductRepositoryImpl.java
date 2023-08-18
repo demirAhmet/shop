@@ -28,6 +28,6 @@ public class ProductRepositoryImpl implements ProductRepository {
         List<Product> productList = entityManager.createQuery("select p from Product p where p.id=:id")
                 .setParameter("id", id)
                 .getResultList();
-        return productList != null && productList.size() > 0 ? productList.get(0) : null;
+        return productList != null && !productList.isEmpty() ? productList.get(0) : null;
     }
 }

@@ -1,7 +1,5 @@
 package com.metamax.shop.service;
 
-import com.metamax.shop.exception.MetamaxBusinessException;
-import com.metamax.shop.exception.MetamaxTechnicalException;
 import com.metamax.shop.model.front.CheckOutForm;
 import com.metamax.shop.service.checkout.CheckOutService;
 import org.junit.jupiter.api.Assertions;
@@ -10,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class CheckOutTestService {
+public class CheckOutServiceTest {
 
     @Autowired
     CheckOutService checkOutService;

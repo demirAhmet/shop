@@ -12,7 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.List;
 
 @SpringBootTest
-public class ProductRepositoryTestService {
+public class ProductRepositoryTest {
 
     @Autowired
     ProductRepository productRepository;
